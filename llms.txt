@@ -1,0 +1,13 @@
+# Ézó1 Mag
+
+> Az Ézó1 egy licencelhető, zárt forrású, determinisztikus döntési és útválasztási komponens.
+
+- Termékoldal: https://jozsiegner.github.io/Ezo1/
+- Verzió: 0.1.0
+- Ár: 500 000 HUF, egyszeri licenc
+- Kapcsolat: egnerjoco@gmail.com
+- Felhasználás: API-k, üzleti rendszerek, belső eszközök és automatizált munkafolyamatok
+- Átadás: fizetés után privát GitHub-hozzáféréssel
+
+A zárt Mag forráskódja nem része a nyilvános weboldalnak.
+
