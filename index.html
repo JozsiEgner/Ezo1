@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Ézó1 – determinisztikus döntési és útválasztási Mag API-khoz, AI agentekhez és üzleti automatizációhoz. Pilot, fejlesztői licenc és vállalati integráció." />
+  <meta name="description" content="Ézó1 – determinisztikus döntési és útválasztási Mag API-khoz, AI agentekhez és üzleti automatizációhoz. Interaktív demo és egyszeri 500 000 Ft-os licenc Revolut fizetéssel." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://jozsiegner.github.io/Ezo1/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="hu_HU" />
   <meta property="og:site_name" content="Ézó1" />
   <meta property="og:title" content="Ézó1 – determinisztikus döntési és routing Mag" />
-  <meta property="og:description" content="Ellenőrizhető, megismételhető routing és döntési logika API-khoz, AI agentekhez és automatizált workflow-khoz." />
+  <meta property="og:description" content="Próbáld ki az interaktív Ézó1 routing demót, majd vásárold meg a zárt Mag licencét egyszeri 500 000 Ft-ért." />
   <meta property="og:url" content="https://jozsiegner.github.io/Ezo1/" />
   <title>Ézó1 — Determinisztikus döntési és routing Mag</title>
   <link rel="stylesheet" href="styles.css?v=2" />
-  <link rel="stylesheet" href="sales.css?v=1" />
+  <link rel="stylesheet" href="sales.css?v=2" />
   <script type="application/ld+json">{
     "@context":"https://schema.org",
     "@type":"SoftwareApplication",
@@ -23,7 +23,8 @@
     "applicationCategory":"DeveloperApplication",
     "operatingSystem":"Cross-platform",
     "description":"Determinisztikus döntési és útválasztási komponens API-khoz, AI agentekhez és automatizált munkafolyamatokhoz.",
-    "url":"https://jozsiegner.github.io/Ezo1/"
+    "url":"https://jozsiegner.github.io/Ezo1/",
+    "offers":{"@type":"Offer","price":"500000","priceCurrency":"HUF"}
   }</script>
 </head>
 <body>
@@ -31,9 +32,9 @@
     <a class="brand" href="#top" aria-label="Ézó1 kezdőlap"><span class="brand-mark">É</span><span>Ézó1</span></a>
     <nav class="topbar-actions" aria-label="Fő navigáció">
       <a class="nav-link" href="#alkalmazasok">Alkalmazások</a>
+      <a class="nav-link" href="#demo">Demo</a>
       <a class="nav-link" href="#mukodes">Működés</a>
-      <a class="nav-link" href="#ajanlat">Ajánlat</a>
-      <a class="nav-cta" href="#pilot">Pilot indítása</a>
+      <a class="nav-cta" href="#vasarlas">Vásárlás · 500 000 Ft</a>
     </nav>
   </header>
 
@@ -45,11 +46,11 @@
         <h1>A routing döntés, <span>amit vissza is lehet követni.</span></h1>
         <p class="lead">Az Ézó1 konfigurálható szabályok alapján fogad bemenetet, értékeli a lehetséges végpontokat, majd ellenőrizhető és megismételhető kimenetet ad. Használható API-k, AI agentek, workflow-k és üzleti rendszerek döntési rétegeként.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#pilot">Kérek pilot egyeztetést</a>
-          <a class="button secondary" href="#mukodes">Mutasd a működést</a>
+          <a class="button primary" href="#demo">Interaktív demo</a>
+          <a class="button secondary" href="#vasarlas">Megvásárolom · 500 000 Ft</a>
         </div>
         <div class="proof-row"><span>Determinisztikus</span><span>Konfigurálható</span><span>Integrálható</span><span>Zárt Mag</span></div>
-        <p class="trust-note">A publikus oldal nem tartalmazza az Ézó1 belső számítási logikáját.</p>
+        <p class="trust-note">A publikus demo szemléltető modell. Az Ézó1 zárt belső számítási logikája nem kerül nyilvánosságra.</p>
       </div>
       <div class="visual" aria-label="Az Ézó1 Mag sematikus ábrája">
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="axis horizontal"></div><div class="axis vertical"></div><div class="beam"></div>
@@ -66,6 +67,57 @@
         <article><span class="tag">AI / AGENT</span><h3>Agent- és modellrouting</h3><p>Egy beérkező feladatot szabályok alapján a megfelelő modellhez, agenthez vagy szolgáltatáshoz irányíthat.</p></article>
         <article><span class="tag">PAYMENT / API</span><h3>Végpontválasztás</h3><p>API-k, szolgáltatók vagy feldolgozó végpontok közötti következetes és konfigurálható elosztás.</p></article>
         <article><span class="tag">WORKFLOW</span><h3>Feladat- és ügyelosztás</h3><p>Leadek, ticketek, kérések vagy belső feladatok prioritás és szabályprofil alapján történő továbbítása.</p></article>
+      </div>
+    </section>
+
+    <section id="demo" class="section shell demo-section">
+      <div class="section-copy"><p class="eyebrow">Interaktív Ézó1 demo</p><h2>Adj bemenetet. Nézd meg, melyik végpontot választja.</h2><p>A demo egy nyilvános, szemléltető determinisztikus modell. Nem tartalmazza és nem fedi fel a zárt Ézó1 Mag valódi számítási logikáját.</p></div>
+      <div class="demo-grid">
+        <form id="ezoDemoForm" class="demo-panel" novalidate>
+          <div class="demo-panel-head"><span class="tag">INPUT</span><strong>Routing paraméterek</strong></div>
+          <label for="demoTask">Feladat típusa</label>
+          <select id="demoTask" required>
+            <option value="ai">AI / agent feladat</option>
+            <option value="payment">Payment / API kérés</option>
+            <option value="workflow">Workflow / ügyelosztás</option>
+          </select>
+          <label for="demoPriority">Prioritás</label>
+          <input id="demoPriority" type="range" min="1" max="10" value="7" />
+          <div class="range-line"><span>alacsony</span><strong id="priorityValue">7</strong><span>magas</span></div>
+          <label for="demoRisk">Kockázati szint</label>
+          <select id="demoRisk">
+            <option value="low">Alacsony</option>
+            <option value="medium" selected>Közepes</option>
+            <option value="high">Magas</option>
+          </select>
+          <label for="demoRegion">Régió / környezet</label>
+          <select id="demoRegion">
+            <option value="eu">EU</option>
+            <option value="global">Globális</option>
+            <option value="local">Helyi / intranet</option>
+          </select>
+          <button class="button primary demo-run" type="submit">Ézó1 döntés futtatása</button>
+          <p class="microcopy">Azonos bemenet mellett a demo azonos eredményt ad.</p>
+        </form>
+
+        <div class="demo-panel demo-output" aria-live="polite">
+          <div class="demo-panel-head"><span class="tag">OUTPUT</span><strong>Ézó1 döntési kimenet</strong></div>
+          <div class="demo-status"><span class="status-dot"></span><span id="demoStatus">Készen áll</span></div>
+          <div class="winner-card">
+            <small>KIVÁLASZTOTT VÉGPONT</small>
+            <strong id="demoWinner">—</strong>
+            <span id="demoReason">Futtasd a demót az eredményhez.</span>
+          </div>
+          <div id="demoScores" class="score-list">
+            <div class="score-row"><span>01 · Alpha</span><div><i style="width:0%"></i></div><strong>0%</strong></div>
+            <div class="score-row"><span>02 · Beta</span><div><i style="width:0%"></i></div><strong>0%</strong></div>
+            <div class="score-row"><span>03 · Gamma</span><div><i style="width:0%"></i></div><strong>0%</strong></div>
+            <div class="score-row"><span>04 · Delta</span><div><i style="width:0%"></i></div><strong>0%</strong></div>
+          </div>
+          <pre id="demoJson" class="demo-json">{
+  "status": "ready"
+}</pre>
+        </div>
       </div>
     </section>
 
@@ -87,52 +139,30 @@
       </div>
     </section>
 
-    <section id="pilot" class="section shell">
-      <div class="pilot">
-        <div class="pilot-card">
-          <p class="eyebrow">Ajánlott első lépés</p><h2>Pilot egy konkrét üzleti problémára.</h2>
-          <p class="lead">Nem kell vakon licencet vásárolni. Először kijelölünk egy valós routing vagy döntési feladatot, és megnézzük, hogyan illeszthető rá az Ézó1.</p>
-          <div class="pilot-actions"><a class="button primary" href="mailto:egnerjoco@gmail.com?subject=%C3%89z%C3%B31%20pilot%20egyeztet%C3%A9s&body=C%C3%A9g%3A%0AProbl%C3%A9ma%2Fuse-case%3A%0AJelenlegi%20rendszer%3A%0A">Pilot egyeztetés e-mailben</a><a class="button secondary" href="#ajanlat">Licenc opciók</a></div>
-        </div>
-        <div class="pilot-card"><p class="eyebrow">Pilot során</p><ul><li>kiválasztjuk a bemeneteket és végpontokat;</li><li>definiáljuk a döntési szabályokat;</li><li>kialakítjuk a tesztpéldákat;</li><li>ellenőrizzük a reprodukálhatóságot;</li><li>meghatározzuk az integráció következő lépését.</li></ul></div>
-      </div>
-    </section>
-
-    <section id="ajanlat" class="section shell">
-      <div class="section-copy"><p class="eyebrow">Licenc és együttműködés</p><h2>Három belépési szint.</h2><p>Vállalati érdeklődőnek először pilotot javaslunk. A fejlesztői licenc továbbra is közvetlenül megvásárolható.</p></div>
-      <div class="offer-grid">
-        <article class="offer-card"><span class="tag">PILOT</span><h3>Ézó1 Pilot</h3><div class="price-mini">Egyedi ajánlat</div><p>Egy konkrét use-case technikai illesztésének és üzleti értékének vizsgálatára.</p><ul><li>use-case egyeztetés</li><li>tesztmodell</li><li>integrációs javaslat</li></ul><a class="button secondary" href="mailto:egnerjoco@gmail.com?subject=%C3%89z%C3%B31%20pilot">Egyeztetés</a></article>
-        <article class="offer-card featured"><span class="tag">DEVELOPER</span><h3>Ézó1 Mag 0.1</h3><div class="price-mini">500 000 Ft</div><p>Egyszeri licencelt hozzáférés a zárt Maghoz és a kapcsolódó fejlesztői anyagokhoz.</p><ul><li>privát GitHub-hozzáférés</li><li>Mag és szabályprofilok</li><li>integrációs alap</li></ul><a class="button primary" href="#vasarlas">Közvetlen vásárlás</a></article>
-        <article class="offer-card"><span class="tag">ENTERPRISE</span><h3>Vállalati integráció</h3><div class="price-mini">Egyedi ajánlat</div><p>Testreszabott bevezetés, integráció és üzleti környezethez igazított szabályprofil.</p><ul><li>technikai integráció</li><li>egyedi konfiguráció</li><li>támogatás és átadás</li></ul><a class="button secondary" href="mailto:egnerjoco@gmail.com?subject=%C3%89z%C3%B31%20Enterprise">Vállalati egyeztetés</a></article>
-      </div>
-    </section>
-
     <section id="vasarlas" class="checkout-section shell">
-      <div class="checkout-copy"><p class="eyebrow">Developer licenc</p><h2>Ézó1 Mag 0.1</h2><p>A közvetlen vásárlás azoknak szól, akik már technikailag értékelték a megoldást. A privát hozzáférés a fizetés ellenőrzése után manuálisan kerül kiadásra.</p><a class="contact-link" href="mailto:egnerjoco@gmail.com?subject=%C3%89z%C3%B31%20v%C3%A1s%C3%A1rl%C3%A1s">egnerjoco@gmail.com</a></div>
+      <div class="checkout-copy"><p class="eyebrow">Egyetlen licenc · egyetlen ár</p><h2>Ézó1 Mag 0.1</h2><p>Egyszeri <strong>500 000 Ft</strong>. A fizetés kizárólag Revoluton történik. A privát GitHub-hozzáférés a tranzakció ellenőrzése után manuálisan kerül kiadásra.</p><a class="contact-link" href="mailto:egnerjoco@gmail.com?subject=%C3%89z%C3%B31%20v%C3%A1s%C3%A1rl%C3%A1s">egnerjoco@gmail.com</a></div>
       <form id="checkoutForm" class="checkout-card" novalidate>
-        <div class="price-label">Ézó1 Mag-hozzáférés</div><div class="price">500 000 <span>Ft</span></div><div class="price-note">Egyszeri fizetés · manuális hozzáférés-kiadás</div>
+        <div class="price-label">Ézó1 Mag-hozzáférés</div><div class="price">500 000 <span>Ft</span></div><div class="price-note">Egyszeri fizetés · Revolut · manuális hozzáférés-kiadás</div>
         <label for="githubUsername">GitHub-felhasználónév</label>
         <div class="input-wrap"><span>@</span><input id="githubUsername" name="githubUsername" type="text" maxlength="39" autocomplete="off" placeholder="felhasznalonev" aria-describedby="usernameHelp checkoutError" required></div>
-        <p id="usernameHelp" class="help">Ez kerül a fizetés közleményébe, így azonosítható, melyik GitHub-fióknak kell hozzáférést adni.</p><p id="checkoutError" class="error" role="alert" aria-live="polite"></p>
+        <p id="usernameHelp" class="help">Ez kerül a Revolut fizetés közleményébe, így azonosítható, melyik GitHub-fióknak kell hozzáférést adni.</p><p id="checkoutError" class="error" role="alert" aria-live="polite"></p>
         <label class="consent"><input id="manualConsent" type="checkbox" required><span>Tudomásul veszem, hogy a privát hozzáférés kiadása manuálisan történik.</span></label>
         <button id="paymentButton" class="payment-button" type="submit">Fizetés Revoluttal · 500 000 Ft</button><p class="secure-note">A fizetési adatokat a Revolut kezeli; ezen az oldalon nem ad meg bankkártyaadatot.</p>
       </form>
     </section>
 
     <section class="section shell"><div class="section-copy"><p class="eyebrow">Gyakori kérdések</p><h2>Amit egy technikai vevő először tudni akar.</h2></div><div class="faq">
-      <details><summary>Nyilvános az Ézó1 belső algoritmusa?</summary><p>Nem. A publikus GitHub Pages oldal értékesítési és termékbemutató felület; a zárt Mag nem része a nyilvános repositorynak.</p></details>
-      <details><summary>Kész végfelhasználói alkalmazás?</summary><p>Nem. Az Ézó1 fejlesztői komponens, amelyet egy meglévő vagy új rendszer döntési pontjához kell integrálni.</p></details>
-      <details><summary>AI helyett működik?</summary><p>Nem feltétlenül. AI rendszer mellett is használható, például modell- vagy agentrouting meghatározására, amikor determinisztikus kontroll szükséges.</p></details>
-      <details><summary>Hogyan kezdődik egy vállalati együttműködés?</summary><p>Egy rövid use-case egyeztetéssel: milyen bemenetből, milyen szabályok szerint, milyen lehetséges végpontok közül kell dönteni.</p></details>
+      <details><summary>Nyilvános az Ézó1 belső algoritmusa?</summary><p>Nem. A publikus oldal és az interaktív demo nem tartalmazza a zárt Mag belső számítási logikáját.</p></details>
+      <details><summary>A demo maga az Ézó1 Mag?</summary><p>Nem. A demo a determinisztikus routing működési elvét szemlélteti nyilvános, különálló logikával.</p></details>
+      <details><summary>Mennyibe kerül?</summary><p>Az Ézó1 Mag 0.1 egyszeri ára 500 000 Ft. Nincs más publikus árszint ezen az oldalon.</p></details>
+      <details><summary>Hogyan lehet fizetni?</summary><p>A fizetés Revoluton történik. A GitHub-felhasználónév bekerül a közleménybe, a hozzáférés pedig ellenőrzés után manuálisan kerül kiadásra.</p></details>
     </div></section>
 
-    <section class="final-cta shell"><p class="eyebrow">Következő lépés</p><h2>Adj egy valós routing problémát. Megnézzük, illik-e rá az Ézó1.</h2><p>Írd meg röviden a jelenlegi folyamatot, a lehetséges végpontokat és azt, milyen szabályok alapján kellene választani.</p><div class="pilot-actions"><a class="button primary" href="mailto:egnerjoco@gmail.com?subject=%C3%89z%C3%B31%20B2B%20%C3%A9rdekl%C5%91d%C3%A9s">Kapcsolatfelvétel</a><a class="button secondary" href="#vasarlas">Developer licenc</a></div></section>
+    <section class="final-cta shell"><p class="eyebrow">Következő lépés</p><h2>Próbáld ki. Ha illik a rendszeredhez, vedd meg az Ézó1 Magot.</h2><p>A demo után közvetlenül elérhető az egyszeri 500 000 Ft-os Revolut vásárlás.</p><div class="pilot-actions"><a class="button primary" href="#demo">Demo futtatása</a><a class="button secondary" href="#vasarlas">Vásárlás · 500 000 Ft</a></div></section>
   </main>
 
   <footer class="footer shell"><span>Ézó1 · Determinisztikus döntési Mag</span><a href="mailto:egnerjoco@gmail.com">egnerjoco@gmail.com</a></footer>
-
-  <div class="modal-backdrop" id="useCasesModal" hidden><section class="use-cases-modal" role="dialog" aria-modal="true" aria-labelledby="useCasesTitle"><button class="modal-close" id="closeUseCases" type="button" aria-label="Ablak bezárása">×</button><p class="eyebrow">Ézó1 alkalmazási területek</p><h2 id="useCasesTitle">Routing, pontozás, workflow és AI agent orchestration.</h2><p class="modal-intro">Az Ézó1 olyan rendszerbe illeszthető, ahol a döntési pontnak követhető és megismételhető logikára van szüksége.</p><div class="modal-actions"><button class="button secondary modal-dismiss" id="dismissUseCases" type="button">Bezárás</button><a class="button primary" href="#pilot" id="modalPurchaseLink">Pilot indítása</a></div></section></div>
-  <button id="openUseCases" type="button" hidden>Use cases</button>
+  <script src="demo.js?v=1" defer></script>
   <script src="checkout.js?v=3" defer></script>
 </body>
 </html>
