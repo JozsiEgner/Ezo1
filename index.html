@@ -12,7 +12,10 @@
       <a class="brand" href="#top" aria-label="Ézó1 kezdőlap">
         <span class="brand-mark">É</span><span>Ézó1</span>
       </a>
-      <a class="nav-cta" href="#vasarlas">Vásárlás</a>
+      <nav class="topbar-actions" aria-label="Fő navigáció">
+        <button class="nav-info" id="openUseCases" type="button">Mire használható?</button>
+        <a class="nav-cta" href="#vasarlas">Vásárlás</a>
+      </nav>
     </header>
 
     <main id="top">
@@ -135,6 +138,56 @@
       <span>Ézó1 · Zárt döntési Mag</span>
       <a href="mailto:egnerjoco@gmail.com">egnerjoco@gmail.com</a>
     </footer>
+
+    <div class="modal-backdrop" id="useCasesModal" hidden>
+      <section
+        class="use-cases-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="useCasesTitle"
+        aria-describedby="useCasesIntro"
+      >
+        <button class="modal-close" id="closeUseCases" type="button" aria-label="Ablak bezárása">×</button>
+        <p class="eyebrow">Ézó1 alkalmazási területek</p>
+        <h2 id="useCasesTitle">Mire és hol használható?</h2>
+        <p id="useCasesIntro" class="modal-intro">
+          Az Ézó1 olyan rendszerekbe építhető be, ahol ugyanabból a bemenetből mindig
+          ellenőrizhető, megismételhető és szabályalapú döntési eredményre van szükség.
+        </p>
+
+        <div class="use-case-grid">
+          <article>
+            <span>01</span>
+            <h3>Útválasztás és elosztás</h3>
+            <p>Feladatok, ügyek, kérések vagy erőforrások előre meghatározott végpontok közötti elosztására.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Pontozás és rangsorolás</h3>
+            <p>Alternatívák következetes súlyozására, prioritási sorrend és döntéstámogató eredmény előállítására.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Automatizált folyamatok</h3>
+            <p>Üzleti munkafolyamatok, belső eszközök és automatizációs vagy AI-folyamatok szabályozható döntési pontjaként.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Integrálható környezetek</h3>
+            <p>Webalkalmazásban, szerveroldali szolgáltatásban, API mögött, felhőben vagy helyi és intranetes rendszerben.</p>
+          </article>
+        </div>
+
+        <div class="modal-note">
+          <strong>Fontos:</strong> az Ézó1 fejlesztői komponens, ezért a konkrét rendszerbe
+          történő beépítést igényel. Nem helyettesít jogi, egészségügyi vagy más szakértői döntést.
+        </div>
+        <div class="modal-actions">
+          <button class="button secondary modal-dismiss" id="dismissUseCases" type="button">Értem, bezárom</button>
+          <a class="button primary" href="#vasarlas" id="modalPurchaseLink">Ézó1 hozzáférés</a>
+        </div>
+      </section>
+    </div>
 
     <script src="checkout.js"></script>
   </body>
