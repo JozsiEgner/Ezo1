@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ézó1 – zárt vizuális döntési és útválasztási Mag." />
+    <title>Ézó1 — Zárt döntési Mag</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar shell">
+      <a class="brand" href="#top" aria-label="Ézó1 kezdőlap">
+        <span class="brand-mark">É</span><span>Ézó1</span>
+      </a>
+      <a class="nav-cta" href="#vasarlas">Vásárlás</a>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow">Zárt vizuális döntési és útválasztási Mag</p>
+          <h1>A döntési mag, <span>amit nem kell újra feltalálni.</span></h1>
+          <p class="lead">
+            Az Ézó1 egy licencelhető, determinisztikus komponens: bemenetet fogad,
+            konfigurálható szabályprofil szerint végpontokra osztja, majd követhető
+            kimenetet ad vissza.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#vasarlas">Ézó1 hozzáférés</a>
+            <a class="button secondary" href="mailto:egnerjoco@gmail.com?subject=%C3%89z%C3%B31%20%C3%A9rdekl%C5%91d%C3%A9s">Kapcsolat</a>
+          </div>
+          <div class="proof-row">
+            <span>Determinisztikus</span><span>Normalizált kimenet</span><span>Zárt Mag</span>
+          </div>
+        </div>
+
+        <div class="visual" aria-label="Az Ézó1 Mag sematikus ábrája">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="axis horizontal"></div>
+          <div class="axis vertical"></div>
+          <div class="beam"></div>
+          <div class="core">ÉZÓ1<br /><strong>MAG</strong></div>
+          <div class="point north">01</div>
+          <div class="point east active">02</div>
+          <div class="point south">03</div>
+          <div class="point west">04</div>
+        </div>
+      </section>
+
+      <section class="feature-section shell">
+        <div class="section-heading">
+          <p class="eyebrow">Mit kap a vásárló?</p>
+          <h2>Egy használható Magot, nem egy látványtervet.</h2>
+        </div>
+        <div class="features">
+          <article>
+            <span class="feature-number">01</span>
+            <h3>Licencelt hozzáférés</h3>
+            <p>A Mag nem nyilvános: kizárólag jogosult vásárlók kapnak privát hozzáférést.</p>
+          </article>
+          <article>
+            <span class="feature-number">02</span>
+            <h3>Ellenőrzött működés</h3>
+            <p>A végponti súlyok összege pontosan 100%, a működés megismételhető és tesztelt.</p>
+          </article>
+          <article>
+            <span class="feature-number">03</span>
+            <h3>Beépítési alap</h3>
+            <p>Dokumentált Mag, szabályprofilok és integrációhoz használható kimeneti struktúra.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="vasarlas" class="checkout-section shell">
+        <div class="checkout-copy">
+          <p class="eyebrow">Egyszeri hozzáférés</p>
+          <h2>Ézó1 Mag 0.1</h2>
+          <p>
+            A fizetés Revoluton történik. A GitHub-felhasználónév bekerül a
+            közleménybe, így a privát hozzáférés azonosítható és manuálisan kiadható.
+          </p>
+          <a class="contact-link" href="mailto:egnerjoco@gmail.com?subject=%C3%89z%C3%B31%20v%C3%A1s%C3%A1rl%C3%A1s">
+            egnerjoco@gmail.com
+          </a>
+        </div>
+
+        <form id="checkoutForm" class="checkout-card" novalidate>
+          <div class="price-label">Ézó1 Mag-hozzáférés</div>
+          <div class="price">500 000 <span>Ft</span></div>
+          <div class="price-note">Egyszeri fizetés · manuális hozzáférés-kiadás</div>
+
+          <label for="githubUsername">GitHub-felhasználónév</label>
+          <div class="input-wrap">
+            <span>@</span>
+            <input
+              id="githubUsername"
+              name="githubUsername"
+              type="text"
+              maxlength="39"
+              autocomplete="off"
+              placeholder="felhasznalonev"
+              aria-describedby="usernameHelp checkoutError"
+              required
+            />
+          </div>
+          <p id="usernameHelp" class="help">
+            Ez kerül az Ézó1 fizetés közleményébe. A gomb a Revolut oldalára visz.
+          </p>
+          <p id="checkoutError" class="error" role="alert" aria-live="polite"></p>
+
+          <label class="consent">
+            <input id="manualConsent" type="checkbox" required />
+            <span>Tudomásul veszem, hogy a privát hozzáférés kiadása manuálisan történik.</span>
+          </label>
+
+          <button id="paymentButton" class="payment-button" type="submit">
+            Fizetés Revoluttal · 500 000 Ft
+          </button>
+          <p class="secure-note">A fizetési adatokat a Revolut kezeli; ezen az oldalon nem ad meg bankkártyaadatot.</p>
+        </form>
+      </section>
+
+      <section class="steps shell">
+        <p class="eyebrow">Vásárlási folyamat</p>
+        <ol>
+          <li><span>1</span><div><strong>GitHub-név megadása</strong><p>Azonosítja, kinek kell hozzáférést adni.</p></div></li>
+          <li><span>2</span><div><strong>Fizetés Revoluton</strong><p>A fizetési oldal 500 000 Ft összeget jelenít meg.</p></div></li>
+          <li><span>3</span><div><strong>Privát hozzáférés</strong><p>A jogosultság a fizetés ellenőrzése után manuálisan kerül kiadásra.</p></div></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="footer shell">
+      <span>Ézó1 · Zárt döntési Mag</span>
+      <a href="mailto:egnerjoco@gmail.com">egnerjoco@gmail.com</a>
+    </footer>
+
+    <script src="checkout.js"></script>
+  </body>
+</html>
+
