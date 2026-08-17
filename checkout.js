@@ -37,3 +37,43 @@
   });
 })();
 
+(function configureUseCasesModal() {
+  "use strict";
+
+  const modal = document.getElementById("useCasesModal");
+  const openButton = document.getElementById("openUseCases");
+  const closeButton = document.getElementById("closeUseCases");
+  const dismissButton = document.getElementById("dismissUseCases");
+  const purchaseLink = document.getElementById("modalPurchaseLink");
+  let previouslyFocusedElement = null;
+
+  function openModal() {
+    previouslyFocusedElement = document.activeElement;
+    modal.hidden = false;
+    document.body.classList.add("modal-open");
+    closeButton.focus();
+  }
+
+  function closeModal() {
+    modal.hidden = true;
+    document.body.classList.remove("modal-open");
+    if (previouslyFocusedElement) previouslyFocusedElement.focus();
+  }
+
+  openButton.addEventListener("click", openModal);
+  closeButton.addEventListener("click", closeModal);
+  dismissButton.addEventListener("click", closeModal);
+  purchaseLink.addEventListener("click", closeModal);
+  modal.addEventListener("click", function closeOnBackdrop(event) {
+    if (event.target === modal) closeModal();
+  });
+  document.addEventListener("keydown", function closeOnEscape(event) {
+    if (event.key === "Escape" && !modal.hidden) closeModal();
+  });
+
+  if (!sessionStorage.getItem("ezo1-use-cases-seen")) {
+    sessionStorage.setItem("ezo1-use-cases-seen", "1");
+    window.setTimeout(openModal, 550);
+  }
+})();
+
