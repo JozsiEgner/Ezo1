@@ -42,3 +42,5 @@
     window.location.assign(paymentUrl.toString());
   });
 })();
+
+// Pages rebuild marker: demo removed permanently.
