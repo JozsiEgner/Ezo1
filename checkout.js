@@ -8,9 +8,15 @@
   const consentInput = document.getElementById("manualConsent");
   const errorElement = document.getElementById("checkoutError");
 
+  if (!form || !usernameInput || !consentInput || !errorElement) return;
+
   function isValidGitHubUsername(value) {
     return /^[a-z\d](?:[a-z\d-]{0,37}[a-z\d])?$/i.test(value) && !value.includes("--");
   }
+
+  usernameInput.addEventListener("input", function () {
+    if (errorElement.textContent) errorElement.textContent = "";
+  });
 
   form.addEventListener("submit", function handleCheckout(event) {
     event.preventDefault();
@@ -45,6 +51,9 @@
   const closeButton = document.getElementById("closeUseCases");
   const dismissButton = document.getElementById("dismissUseCases");
   const purchaseLink = document.getElementById("modalPurchaseLink");
+
+  if (!modal || !openButton || !closeButton || !dismissButton || !purchaseLink) return;
+
   let previouslyFocusedElement = null;
 
   function openModal() {
@@ -64,16 +73,10 @@
   closeButton.addEventListener("click", closeModal);
   dismissButton.addEventListener("click", closeModal);
   purchaseLink.addEventListener("click", closeModal);
-  modal.addEventListener("click", function closeOnBackdrop(event) {
+  modal.addEventListener("click", function (event) {
     if (event.target === modal) closeModal();
   });
-  document.addEventListener("keydown", function closeOnEscape(event) {
+  document.addEventListener("keydown", function (event) {
     if (event.key === "Escape" && !modal.hidden) closeModal();
   });
-
-  if (!sessionStorage.getItem("ezo1-use-cases-seen")) {
-    sessionStorage.setItem("ezo1-use-cases-seen", "1");
-    window.setTimeout(openModal, 550);
-  }
 })();
-
