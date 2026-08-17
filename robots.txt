@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jozsiegner.github.io/Ezo1/sitemap.xml
+
